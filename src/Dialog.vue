@@ -98,7 +98,7 @@ export default {
       if (button && typeof button.handler === 'function') {
         button.handler(i, event, { source })
       } else {
-        this.$modal.hide('dialog')
+        this.$modal.hide(`${this.dialogName}`)
       }
     },
     onKeyUp (event) {
